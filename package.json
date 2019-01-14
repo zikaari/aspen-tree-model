@@ -1,6 +1,6 @@
 {
   "name": "aspen-tree-model",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "State container for aspen trees",
   "main": "dist/index.js",
   "typings": "dist/typings/index.d.ts",
