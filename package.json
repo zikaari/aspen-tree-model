@@ -1,0 +1,49 @@
+{
+  "name": "aspen-tree-model",
+  "version": "0.0.0",
+  "description": "State container for aspen trees",
+  "main": "dist/index.js",
+  "typings": "dist/typings/index.d.ts",
+  "scripts": {
+    "test": "jest",
+    "build": "tsc",
+    "watch": "tsc -w",
+    "lint": "tslint --project .",
+    "prepack": "npm run lint && npm run build && npm run test && npm run generate-docs",
+    "postpublish": "npm run publish-docs",
+    "generate-docs": "typedoc --mode file --excludePrivate --excludeProtected --excludeNotExported --theme node_modules/typedoc-clarity-theme/bin --out dist/docs ./src",
+    "publish-docs": "gh-pages -d dist/docs"
+  },
+  "dependencies": {
+    "aspen-core": "^1.0.1",
+    "notificar": "^1.0.1"
+  },
+  "devDependencies": {
+    "@types/jest": "^23.3.11",
+    "gh-pages": "^2.0.1",
+    "jest": "^23.6.0",
+    "ts-jest": "^23.10.5",
+    "tslint": "^5.12.1",
+    "typedoc": "^0.14.1",
+    "typedoc-clarity-theme": "^1.1.0",
+    "typescript": "^3.2.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neeksandhu/aspen-tree-model.git"
+  },
+  "keywords": [
+    "react",
+    "aspen",
+    "tree",
+    "model",
+    "state",
+    "container"
+  ],
+  "author": "Neek Sandhu <neek.sandhu@outlook.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/neeksandhu/aspen-tree-model/issues"
+  },
+  "homepage": "https://github.com/neeksandhu/aspen-tree-model#readme"
+}
