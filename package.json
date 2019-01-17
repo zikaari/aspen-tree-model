@@ -15,7 +15,7 @@
     "publish-docs": "gh-pages -d dist/docs"
   },
   "dependencies": {
-    "aspen-core": "^1.0.1",
+    "aspen-core": "^1.0.2",
     "notificar": "^1.0.1"
   },
   "devDependencies": {
